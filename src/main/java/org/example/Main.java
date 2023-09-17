@@ -10,6 +10,7 @@ public class Main {
         name.add("佐々木");
         name.add("鈴木");
         name.add("佐藤");
+        name.add("高木");
         ArrayList<String> result = new ArrayList<>();
 
         for (String person : name) {
