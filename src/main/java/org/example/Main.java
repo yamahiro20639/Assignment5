@@ -11,13 +11,10 @@ public class Main {
         name.add("鈴木");
         name.add("佐藤");
         name.add("高木");
-        ArrayList<String> result = new ArrayList<>();
 
-        for (String person : name) {
-            if (person.contains("木")) {
-                result.add(person);
-            }
-        }
-        System.out.println(result);
+        name.stream()
+                .filter(list -> list.contains("木"))
+                .forEach(System.out::println);
+
     }
 }
