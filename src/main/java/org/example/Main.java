@@ -1,7 +1,6 @@
 package org.example;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,7 +12,9 @@ public class Main {
         name.add("佐藤");
         name.add("高木");
 
-        List<String> result = name.stream().filter(list -> list.contains("木")).toList();
-        System.out.println(result);
+        name.stream()
+                .filter(list -> list.contains("木"))
+                .forEach(System.out::println);
+
     }
 }
